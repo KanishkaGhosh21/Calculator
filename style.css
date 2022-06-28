@@ -1,0 +1,104 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+nav{
+    position: absolute;
+    z-index: 1;
+}
+
+.container {
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* min-height: 60vh; */
+    /* border: 1px ridge black; */
+    box-shadow: 5px 5px 20px grey;
+    background: rgb(241, 241, 241);
+    width: 400px;
+}
+
+.screen {
+    position: relative;
+    display: block;
+    /* width: 400px; */
+    height: 20vh;
+    max-height: 100px;
+    background: rgb(37, 64, 87);
+    color: khaki;
+    font-weight: 700;
+    font-size: 2rem;
+    border: 3px inset rgb(0, 0, 0);
+}
+
+.result {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 99%;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    overflow-x: auto;
+}
+.btn{
+    border: 2px outset rgb(206, 225, 239);
+}
+.btn:hover{
+    border: 2px inset rgb(206, 225, 239);
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 1vw 1vh;
+    justify-content: space-evenly;
+}
+
+.signs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-evenly;
+    gap: 0.8vw 0.7vh;
+}
+
+#equal {
+    grid-column: 1 / 5;
+    background-color: rgb(242, 242, 67);
+}
+#equal:hover {
+    background-color: rgb(196, 196, 47);
+}
+#clear{
+    /* grid-column: 3 / 4; */
+    background: rgb(236, 72, 72);
+}
+#clear:hover{
+    background: rgb(193, 49, 49);
+}
+
+.btn {
+    font-weight: 700;
+}
+
+.digit {
+    font-weight: 700;
+    background: rgb(79, 204, 185);
+}
+
+.digit:hover {
+    font-weight: 700;
+    background: rgb(65, 170, 154);
+}
+
+.sign {
+    font-weight: 700;
+    background: rgb(85, 197, 228);
+}
+
+.sign:hover {
+    font-weight: 700;
+    background: rgb(73, 164, 189);
+}
